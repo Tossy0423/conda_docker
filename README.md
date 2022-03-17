@@ -17,7 +17,7 @@ Nvidia Driverをインストールしておくこと. CUDA versionが11.0以上�
     ビルドしたイメージをコンテナ化. これは最初だけ行う. `RUN-DOCKER-CONTAINER.sh`にて, `--restart always`オプションをつけているので, コンテナ内の環境がコミットされるまで保持され続ける. 
     ```bash
     cd ./Anaconda3/x86 && bash RUN-DOCKER-CONTAINER.sh
-    ``
+    ```
 
 
 
