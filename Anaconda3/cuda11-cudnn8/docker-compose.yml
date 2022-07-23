@@ -4,6 +4,7 @@ services:
   anaconda3:
     privileged: true
     image: tossy0423/anaconda:cuda11-cudnn8
+    
 
     ## GPU Settings
     runtime: nvidia
@@ -18,7 +19,7 @@ services:
     
     ## Setting of Volumes
     volumes:
-      - ${PWD}:/home/workspace:rw
-    
+      - ./:/root/workspace:rw
+    working_dir: /root/workspace
     stdin_open: true
 
